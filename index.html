@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="https://github.com/Gabriel-HSM" target="_blank">GITHUB</a>
+            <a href="#">OPTIONS</a>
+            <a href="$">TEMA</a>
+        </div>
+    </nav>
+    <main>
+        <div id="fundo">
+            <input type="number" name="esquerdo" id="esquerdo">
+            <input type="number" name="direito" id="direito">
+            <input type="button" value="+" id="botao" onclick="somar()">
+            <div id="resultado">
+
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        function somar(){
+        var txt1 = window.document.getElementById("esquerdo")
+        var txt2 = window.document.getElementById("direito")
+        var r = window.document.getElementById("resultado")
+        var n1 = Number(txt1.value)
+        var n2 =Number(txt2.value)
+        var r = n1 + n2;
+        resultado.innerHTML = r
+        }
+    </script>
+</body>
+</html>
