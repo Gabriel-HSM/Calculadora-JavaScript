@@ -8,33 +8,65 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <picture>
-            <source media="(min-width: )" srcset="">
-            <img src="imagens/Céu.webp" alt="">
-        </picture>
-    </header>
     <main>
-        <div id="fundo">
-        </div>
         <div id="calculadora">
-            <input type="number" name="esquerdo" id="esquerdo">
-            <input type="number" name="direito" id="direito">
-            <input type="button" value="+" id="botao" onclick="somar()">
-            <div id="resultado">
+            <div id="resultado"></div>
+            <input type="button" value="+" id="mais" onclick="somar()">
+            <input type="button" value="-" id="menos" onclick="subtrair()">
+            <input type="button" value="=" id="igual" onclick="resultado()">
+            <input type="button" value="*" id="vezes" onclick="multiplicar()">
+            <input type="button" value="/" id="dividir" onclick="dividir()">
+            <input type="button" value="C" id="limpar" onclick="limpar()">
+
+            <input type="number" id="primeiro">
+            <input type="number" id="segundo">
+            
         </div>
     </main>
     
     <script>
         function somar(){
-        var txt1 = window.document.getElementById("esquerdo")
-        var txt2 = window.document.getElementById("direito")
+        var txt1 = window.document.getElementById("primeiro")
+        var txt2 = window.document.getElementById("segundo")
         var r = window.document.getElementById("resultado")
         var n1 = Number(txt1.value)
         var n2 =Number(txt2.value)
         var r = n1 + n2;
         resultado.innerHTML = r
         }
+        function subtrair(){
+            var txts1 = window.document.getElementById("primeiro")
+            var txts2 = window.document.getElementById("segundo")
+            var rs = window.document.getElementById("resultado")
+            var ns1 = Number(txts1.value)
+            var ns2 = Number(txts2.value)
+            var rs = ns1 - ns2
+            resultado.innerHTML = rs
+        }
+        function multiplicar(){
+            var txtm1 = window.document.getElementById("primeiro")
+            var txtm2 = window.document.getElementById("segundo")
+            var rm = window.document.getElementById("resultado")
+            var nm1 = Number(txtm1.value)
+            var nm2 = Number(txtm2.value)
+            var rs = nm1 * nm2
+            resultado.innerHTML = rs
+        }
+        function dividir(){
+            var txtd1 = window.document.getElementById("primeiro")
+            var txtd2 = window.document.getElementById("segundo")
+            var rd = window.document.getElementById("resultado")
+            var nd1 = Number(txtd1.value)
+            var nd2 = Number(txtd2.value)
+            var rd =  nd1 / nd2
+            resultado.innerHTML = rd
+        }
+        function limpar(){
+            window.document.getElementById("primeiro").value = ""
+            window.document.getElementById("segundo").value = ""
+            window.document.getElementById("resultado").innerHTML = ""
+        }
     </script>
+</img>    
 </body>
 </html>

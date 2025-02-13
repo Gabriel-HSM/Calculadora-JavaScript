@@ -4,78 +4,127 @@
 
 
 :root{
-    --cor1: #cce6ff;
+    --cor1: #999FAA;
     --cor2: #99ccff;
     --cor3: #0f4377;
     --cor4: #004283;
     --cor5: #0a1f33;
     --cor6: #08415C;
-
+    --cor7: #1F1B83;
+    --cor8: #080722;
 }
+
 *{
     padding: 0px;
     margin: 0px;
 }
+
 body{
-    background-color: var(--cor2)
-    
+    background-image: url('../imagens/ceu-certo.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
 }
-header{
-    font-family: 'Barlow Condensed', normal, monospace;
-    font-weight: lighter;
-    font-size: 150%;
-    background-image: linear-gradient(var(--cor4),var(--cor5));
-    color: white;
-    width: 100%;
-    height: 150px;
-    box-shadow: 0px 30px 10px 10px rgba(0, 0, 0, 0.63);
+
+#calculadora{
+    background-image: linear-gradient(var(--cor8), var(--cor7));
+    border-color: black;
+    border-radius: 20px;
+    margin: 220px auto;
+    height: 450px;
+    width: 350px;
 }
-picture > img{
-    height: 350px;
-    width: 100%;
-}
-nav{
-   background-color: var(--cor5);
-}
-div#fundo{
-    position: relative;
-    background-color: #014CC7;
-    margin: 175px 0px 0px 0px;
-    height: 100vh;
-}
-div > #calculadora{
-    position: relative;
-    background-color: var(--cor6);
-    height: 100px;
-    width: 100px;
-}
-input#esquerdo{
-    margin: 50px 110px 0px 110px;
-    width: 70px;
-    height: 70px;
-    background-color: var(--cor4);
+#resultado{
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 110%;
+    background-color: var(--cor1);
+    box-shadow: inset -5px 5px 10px 5px rgba(0, 0, 0, 0.603);
+
     text-align: center;
+    display: flex;
+    position: absolute;
+    margin: 20px 25px 10px 25px;
+    align-items: center;
+    justify-content: center;
+ 
 }
-input#direito{
-    margin:50px 110px 0px 110px;
-    width: 70px;
-    height: 70px;
-    background-color: var(--cor4);
-    text-align: center;
-}
-input#botao{
-    display: block;
-    margin: auto;
+input#igual{
+    display: flex;
+    position: absolute;
+    margin:385px 0px 0px 285px;
+    background-color: var(--cor1);
+    border-radius: 10px;
     width: 50px;
     height: 50px;
 }
-div#resultado{
+
+input#mais{
     display: flex;
-    width: 100px;
-    height: 70px;
-    margin: 20px auto;
-    font-size: 110%;
-    background-color: var(--cor4);
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    margin:330px 0px 0px 285px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+input#menos{
+    display: flex;
+    position: absolute;
+    margin:275px 0px 0px 285px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+#vezes{
+    display: flex;
+    position: absolute;
+    margin:220px 0px 0px 285px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+#dividir{
+    display: flex;
+    position: absolute;
+    margin:165px 0px 0px 285px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+#limpar{
+    display: flex;
+    position: absolute;
+    margin:165px 0px 0px 230px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+#primeiro{
+    display: flex;
+    position: absolute;
+    margin:80px 0px 0px 30px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    box-shadow: inset -5px 5px 10px 5px rgba(0, 0, 0, 0.603);
+}
+#segundo{
+    display: flex;
+    position: absolute;
+    margin:80px 0px 0px 185px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    box-shadow: inset -5px 5px 10px 5px rgba(0, 0, 0, 0.603);
 }
